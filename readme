@@ -1,9 +1,7 @@
 # tilebg.lua v1.0
+For Corona SDK
 ***
-This creates a function tileBG() which will tile an image on the 
-background of the display. It detects your display content height 
-and attempts to calculate the minimum number of tiles needed (based 
-on the size of the provided background tile.)
+This creates a function tileBG() which will tile an image on the background of the display. It detects your display content height and attempts to calculate the minimum number of tiles needed (based on the size of the provided background tile.)
 
 # USAGE
 
@@ -29,8 +27,7 @@ If the function is run without any arguments then it will use these values:
 	bgWidth = 100
 	bgHeight = 100
 
-In other words, you can quickly use this code if you have an image file
-called tileBG.jpg in your project folder, which is 100x100 pixels in size.
+In other words, you can quickly use this code if you have an image file called tileBG.jpg in your project folder, which is 100x100 pixels in size.
 
 Its best to store the background in a local object, as demoed above:
 
@@ -40,8 +37,7 @@ Doing this, you can then use an build in method to self-destruct the tiles:
 
 	bg.removeBG()
 
-Thats all there is to it. There is a full demo on the github repo. To make
-things easier, the function logs everything it does to the console...
+Thats all there is to it. There is a full demo on the github repo. To make things easier, the function logs everything it does to the console...
 
 # CHANGELOG
 1.0 - First release
