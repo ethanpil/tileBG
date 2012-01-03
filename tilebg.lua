@@ -19,7 +19,7 @@
 --
 --  2) Now you can begin to use the function in your code. 
 --
---		local bg = tileBG() --add a new backgroud, use the default settings
+--		local bg = tileBG() --add a new background, use the default settings
 --		
 --  The function takes 3 optional arguments:
 --
@@ -36,6 +36,16 @@
 --
 --	In other words, you can quickly use this code if you have an image file
 --  called tileBG.jpg in your project folder, which is 100x100 pixels in size.
+--
+--  Its best to store the background in a local object, as demoed above:
+-- 		local bg = tileBG()
+--
+--	Doing this, you can then use an build in method to self-destruct the tiles:
+--		bg.removeBG()
+--
+--
+--  Thats all there is to it. There is a full demo on the github repo. To make
+--  things easier, the function logs everything it does to the console...
 --
 ------------------------------------------------------------------------  
 --	---------
@@ -89,7 +99,6 @@ function tileBG(bgImageFile,bgWidth,bgHeight)
 	tiledBG:toBack() --make sure its on the background
 	
    print ("TileBG: Placed " .. bgCount .. " images on background.")
-   print ( "textureMemoryUsed: " .. system.getInfo( "textureMemoryUsed" ) )
    
    	--a function to cleanup the bg
 	function tiledBG.removeBG ()
