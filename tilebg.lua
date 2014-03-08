@@ -89,7 +89,9 @@ function tileBG(bgImageFile,bgWidth,bgHeight)
 	for bgY=1,bgRepeatY do
 		local bgLocationX = 0 --reset x position each time we go to next row
 		for bgX=1,bgRepeatX do
-			tiledBG:insert(display.newImage( bgImageFile, bgLocationX, bgLocationY ))
+			local img = display.newImage( bgImageFile, bgLocationX, bgLocationY );
+			img.anchorX, img.anchorY = 0, 0
+			tiledBG:insert(img)
 			print ("TileBG: Placed tile at x,y: " .. bgLocationX .. "," .. bgLocationY)
 			bgLocationX=bgLocationX+bgWidth
 		end
