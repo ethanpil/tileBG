@@ -1,4 +1,4 @@
-# tilebg.lua v1.0
+# tilebg.lua v1.1
 For Corona SDK
 ***
 This creates a function tileBG() which will tile an image on the background of the display. It detects your display content height and attempts to calculate the minimum number of tiles needed (based on the size of the provided background tile.)
@@ -40,5 +40,6 @@ Doing this, you can then use an build in method to self-destruct the tiles:
 Thats all there is to it. There is a full demo on the github repo. To make things easier, the function logs everything it does to the console...
 
 # CHANGELOG
+1.1 - Updated graphics code from onesvat
 1.0 - First release
 
